@@ -9,7 +9,7 @@ import (
 )
 
 func readLineByLine() []string {
-	file, _ := os.Open("./day01/input.txt")
+	file, _ := os.Open("./input.txt")
 	var lines []string
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
@@ -50,7 +50,6 @@ func part2(left, right []int) {
 }
 
 func main() {
-	println("Hi")
 	lines := readLineByLine()
 	var left []int
 	var right []int
